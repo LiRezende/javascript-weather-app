@@ -22,13 +22,11 @@ const updateUi = (data) => {
   const iconSrc = `assets/icons/${weather.WeatherIcon}.svg`;
   icon.setAttribute("src", iconSrc);
 
-  // Update time images
-  let timeSrc = null;
-  if (weather.IsDayTime) {
-    timeSrc = "assets/img/day.svg";
-  } else {
-    timeSrc = "assets/img/night.svg";
-  }
+  // Update time images with ternary operator
+  let timeSrc = weather.IsDayTime
+    ? "assets/img/day.svg"
+    : "assets/img/night.svg";
+
   time.setAttribute("src", timeSrc);
 
   // Remove the 'd-none' class to display the card with weather information
