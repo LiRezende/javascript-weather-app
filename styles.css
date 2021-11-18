@@ -1,13 +1,61 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap");
 
 body {
-  font-family: "Lato", sans-serif;
-  color: #023047;
+  font-family: "Raleway", sans-serif;
   letter-spacing: 0.2em;
-  font-size: 0.9em;
-  background-image: linear-gradient(to bottom, #fb8500, #ffb703);
+  background-image: linear-gradient(to bottom, #43aa8b, #4d908e, #577590);
+}
+
+h1,
+label {
+  color: #f6fff8;
+}
+
+h1 {
+  font-weight: 200;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+h5,
+span,
+input[type="text"],
+input[type="text"]:focus {
+  color: #277da1;
+  font-weight: 500;
+  height: 20px;
+}
+
+input[type="text"],
+input[type="text"]:focus {
+  font-size: 1.2rem;
+}
+
+a {
+  color: #f6fff8;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 5px;
+}
+
+a:hover {
+  color: #f9844a;
 }
 
 .container {
-  max-width: 400px;
+  max-width: 440px;
+}
+
+.weather-condition {
+  color: #43aa8b;
+  font-weight: 600;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
 }
