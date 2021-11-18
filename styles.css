@@ -39,7 +39,7 @@ a {
   color: #f6fff8;
   font-size: 1.2rem;
   text-decoration: none;
-  padding: 5px;
+  padding: 10px;
 }
 
 a:hover {
@@ -57,7 +57,9 @@ a:hover {
 
 .footer-container {
   display: flex;
+  align-items: center;
   justify-content: center;
+  padding-top: 100px;
 }
 
 .icon {
