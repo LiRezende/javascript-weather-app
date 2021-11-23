@@ -59,4 +59,14 @@ cityForm.addEventListener("submit", (e) => {
   updateCity(city)
     .then((data) => updateUi(data))
     .catch((err) => console.log(err));
+
+  // Set local storage
+  localStorage.setItem("city", city);
 });
+
+// Check if the user already inserted a location. If it`s true, the app will retrieve the city when a user refreshes the browser
+if (localStorage.getItem("city")) {
+  updateCity(localStorage.getItem("city"))
+    .then((data) => updateUi(data))
+    .catch((err) => console.log(err));
+}
